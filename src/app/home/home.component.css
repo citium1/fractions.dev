@@ -9,29 +9,67 @@
   flex: 1 1 auto;
 }
 
+
 .headline-container {
   padding: 2rem 0.5rem;
+  height: 10rem;
 }
 
-.headline-container,
 h1 {
   font-size: 3rem;
   line-height: 3.25rem;
+  position: relative;
+  left: -500px;
+  width: 20rem;
+  height: auto;
+  -webkit-animation: slide 0.75s forwards;
+  -webkit-animation-delay: 0s;
+  animation: slide-h1 0.75s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes slide-h1 {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-h1 {
+  100% {
+    left: 0;
+  }
 }
 
 .intro-container {
-  padding: 0rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 
-.intro-container,
 p {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
+  position: relative;
+  left: -500px;
+  width: 20rem;
+  height: auto;
+  -webkit-animation: slide 0.75s forwards 0.5s;
+  animation: slide-intro 0.75s forwards 0.5s;
+}
+
+@-webkit-keyframes slide-intro {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-intro {
+  100% {
+    left: 0;
+  }
 }
 
 .link-wrapper {
-  padding: 2rem 0.5rem;
+  padding: 0 0.5rem;
 }
 
 ul {
@@ -46,6 +84,34 @@ h2 {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 3.25rem;
+  color: #000;
+}
+
+li,
+h2:hover {
+  cursor: pointer;
+  color: #585858;
+}
+
+ul {
+  position: relative;
+  left: -500px;
+  width: 20rem;
+  height: auto;
+  -webkit-animation: slide 0.75s forwards 1s;
+  animation: slide-h2 0.75s forwards 1s;
+}
+
+@-webkit-keyframes slide-h2 {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-h2 {
+  100% {
+    left: 0;
+  }
 }
 
 .footer-wrapper {
@@ -60,8 +126,41 @@ h2 {
 .footer-wrapper,
 .footer-content {
   width: 100%;
-  text-align: center;
   font-size: 12px;
+  font-weight: 300;
   padding: 1rem;
   margin: auto;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.footer-text:hover {
+  cursor: pointer;
+  color: #585858;
+}
+
+.footer-content {
+  position: relative;
+  width: auto;
+  height: auto;
+  color: #fff;
+  -webkit-animation: show-footer 0.2s forwards 2s;
+  animation: show-footer 0.2s forwards 2s;
+}
+
+@-webkit-keyframes show-footer {
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes show-footer {
+  100% {
+    color: #000;
+  }
 }
