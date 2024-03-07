@@ -1,9 +1,9 @@
 .contact-wrapper {
-
   position: relative;
-  top: -500px;
+  top: -600px;
   width: auto;
   height: 100%;
+  background-color: #fff;
   -webkit-animation: drop 0.75s forwards 0.5s;
   animation: drop 0.75s forwards 0.5s;
 }
@@ -11,11 +11,11 @@
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
-  top: -500px;
+  /* top: -500px; */
   width: auto;
   height: auto;
-  -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s;
+  /* -webkit-animation: drop 0.75s forwards 0.5s;
+  animation: drop 0.75s forwards 0.5s; */
 }
 
 @-webkit-keyframes drop {
@@ -30,12 +30,17 @@
   }
 }
 
+mat-toolbar {
+  background-color: #fff;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
 
 p.breadcrumbs,
 p.back-button {
+  background-color: transparent;
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
@@ -53,6 +58,7 @@ p.back-button:hover {
 .headline-container {
   padding: 2rem 0.5rem;
   height: auto;
+  background-color: #fff;
 }
 
 h1 {
@@ -60,10 +66,12 @@ h1 {
   line-height: 3.25rem;
   height: auto;
   position: relative;
+  background-color: #fff;
 }
 
 .contact-container {
   padding: 2rem 0.5rem;
+  background-color: #fff;
 }
 
 .contact-container,
@@ -73,11 +81,13 @@ h1 {
   line-height: 1.25rem;
   width: 100%;
   position: relative;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
   color: #000;
+  background-color: #fff;
 }
 
 a:hover {
@@ -88,15 +98,17 @@ a:hover {
 .icon-section {
   font-size: 2rem;
   margin-top: 1.5rem;
+  background-color: #fff;
 }
 
 i {
   margin-right: 1rem;
+  background-color: #fff;
 }
 
 i:hover {
   cursor: pointer;
-  color: orange;
+  color: #FF453A;
 }
 
 
@@ -104,9 +116,6 @@ i:hover {
 .footer-content {
   position: absolute;
   bottom: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 
 }
 
@@ -117,6 +126,7 @@ i:hover {
   font-weight: 300;
   padding: 1rem;
   margin: auto;
+  background-color: #fff;
 }
 
 .footer-text {
@@ -124,6 +134,7 @@ i:hover {
   margin: 0;
   padding: 0;
   width: auto;
+  background-color: transparent;
 }
 
 .footer-text:hover {
@@ -135,7 +146,6 @@ i:hover {
   position: relative;
   width: auto;
   height: auto;
-  color: #fff;
   -webkit-animation: show-footer 0.2s forwards 2s;
   animation: show-footer 0.2s forwards 2s;
 }
