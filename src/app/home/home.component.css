@@ -1,4 +1,6 @@
-.home-wrapper {}
+.home-wrapper {
+  height: 100%;
+}
 
 .body-wrapper {
 
@@ -7,6 +9,27 @@
 
 .spacer {
   flex: 1 1 auto;
+}
+
+mat-slide-toggle {
+  position: relative;
+  width: auto;
+  height: auto;
+  visibility: hidden;
+  -webkit-animation: show-toggle 0.2s forwards 2s;
+  animation: show-toggle 0.2s forwards 2s;
+}
+
+@-webkit-keyframes show-toggle {
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes show-toggle {
+  100% {
+    visibility: visible;
+  }
 }
 
 
@@ -22,7 +45,7 @@ h1 {
   left: -500px;
   width: 20rem;
   height: auto;
-  -webkit-animation: slide 0.75s forwards;
+  -webkit-animation: slide-h1 0.75s forwards;
   -webkit-animation-delay: 0s;
   animation: slide-h1 0.75s forwards;
   animation-delay: 0s;
@@ -52,7 +75,7 @@ p {
   left: -500px;
   width: 20rem;
   height: auto;
-  -webkit-animation: slide 0.75s forwards 0.5s;
+  -webkit-animation: slide-intro 0.75s forwards 0.5s;
   animation: slide-intro 0.75s forwards 0.5s;
 }
 
@@ -98,7 +121,7 @@ ul {
   left: -500px;
   width: 20rem;
   height: auto;
-  -webkit-animation: slide 0.75s forwards 1s;
+  -webkit-animation: slide-h2 0.75s forwards 1s;
   animation: slide-h2 0.75s forwards 1s;
 }
 
@@ -117,9 +140,6 @@ ul {
 .footer-wrapper {
   position: absolute;
   bottom: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 
 }
 

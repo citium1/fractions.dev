@@ -1,0 +1,153 @@
+.contact-wrapper {
+
+  position: relative;
+  top: -500px;
+  width: auto;
+  height: 100%;
+  -webkit-animation: drop 0.75s forwards 0.5s;
+  animation: drop 0.75s forwards 0.5s;
+}
+
+.body-wrapper {
+  margin: 1.5rem;
+  position: relative;
+  top: -500px;
+  width: auto;
+  height: auto;
+  -webkit-animation: drop 0.75s forwards 0.5s;
+  animation: drop 0.75s forwards 0.5s;
+}
+
+@-webkit-keyframes drop {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes drop {
+  100% {
+    top: 0;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+p.breadcrumbs,
+p.back-button {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  padding: 0 1rem;
+  margin: 0;
+  width: auto;
+}
+
+p.breadcrumbs,
+p.back-button:hover {
+  cursor: pointer;
+  color: #585858;
+}
+
+.headline-container {
+  padding: 2rem 0.5rem;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  height: auto;
+  position: relative;
+}
+
+.contact-container {
+  padding: 2rem 0.5rem;
+}
+
+.contact-container,
+.contact-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #585858;
+}
+
+.icon-section {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+
+.footer-wrapper,
+.footer-content {
+  position: absolute;
+  bottom: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.footer-wrapper,
+.footer-content {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 1rem;
+  margin: auto;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.footer-text:hover {
+  cursor: pointer;
+  color: #585858;
+}
+
+.footer-content {
+  position: relative;
+  width: auto;
+  height: auto;
+  color: #fff;
+  -webkit-animation: show-footer 0.2s forwards 2s;
+  animation: show-footer 0.2s forwards 2s;
+}
+
+@-webkit-keyframes show-footer {
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes show-footer {
+  100% {
+    color: #000;
+  }
+}
