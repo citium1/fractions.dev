@@ -1,9 +1,13 @@
 <div class="home-wrapper">
   <div class="header-wrapper">
-    <mat-toolbar>
+    <mat-toolbar color="">
+      <span class="breadcrumbs">
+        <p class="route"> / {{activeRoute}}</p>
+      </span>
       <span class="spacer"></span>
-      <mat-slide-toggle class="example-margin" color="primary">
-      </mat-slide-toggle>
+      <div class="theme">
+        <i class="fa-regular fa-lightbulb bulb" (click)="onToggle()"></i>
+      </div>
     </mat-toolbar>
   </div>
   <div class="body-wrapper">
@@ -13,7 +17,8 @@
       </h1>
     </div>
     <div class="intro-container">
-      <p class="intro-text">Citium Technologies is a consultancy firm based in Stockholm, Sweden. With love for software
+      <p class="intro-text">Citium Technologies is a consultancy firm based in Stockholm, Sweden. With love for
+        software
         development we are
         here to
         help you deliver your next application.
@@ -26,17 +31,17 @@
     </div>
     <div class="link-wrapper">
       <div class="link-container">
-        <ul class="link-list">
-          <li class="link-item">
+        <mat-nav-list>
+          <mat-list-item role="navigation">
             <h2>About</h2>
-          </li>
-          <li class="link-item">
+          </mat-list-item>
+          <mat-list-item role="navigation" (click)="onContact()">
             <h2>Contact</h2>
-          </li>
-          <li class="link-item">
+          </mat-list-item>
+          <mat-list-item role="navigation">
             <h2>Apps</h2>
-          </li>
-        </ul>
+          </mat-list-item>
+        </mat-nav-list>
       </div>
     </div>
   </div>
@@ -47,5 +52,4 @@
       </p>
     </div>
   </div>
-
 </div>

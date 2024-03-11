@@ -1,9 +1,11 @@
 <div class="contact-wrapper">
   <div class="header-wrapper">
-    <mat-toolbar>
-      <p class="breadcrumbs">Home / Contact</p>
+    <mat-toolbar color="" class="dark">
+      <span class="breadcrumbs">
+        <p class="route" (click)="onHome()"> / {{activeRoute}}</p>
+      </span>
       <span class="spacer"></span>
-      <p class="back-button">Back</p>
+      <p class="back-button" (click)="onHome()">Back</p>
     </mat-toolbar>
   </div>
   <div class="body-wrapper">
@@ -18,25 +20,21 @@
         hesitate to reach out!
 
         <br><br>
-
         Email: <a href="mailto:info@citium.tech">info&#64;citium.tech</a><br>
         Phone: <a href="tel:+46703155239">070 31 55 239</a> <br>
+
         Address: Box 123, Stockholm, Sweden <br>
       </p>
-
-      <div class="icon-section">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-
-      </div>
-
-    </div>
-    <div class="link-wrapper">
-      <div class="link-container">
-        <ul class="link-list">
-        </ul>
+      <div class="link-wrapper">
+        <div class="link-container">
+          <div class="icon-section">
+            <i class="fa-brands fa-github github"></i>
+            <i class="fa-brands fa-linkedin linkedin"></i>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
   <div class="footer-wrapper">
     <div class="footer-content">

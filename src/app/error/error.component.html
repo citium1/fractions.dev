@@ -1,0 +1,54 @@
+<div class="contact-wrapper">
+  <div class="header-wrapper">
+    <mat-toolbar color="" class="dark">
+      <span class="breadcrumbs">
+        <p class="route" (click)="onHome()"> / {{activeRoute}}</p>
+      </span>
+      <span class="spacer"></span>
+      <p class="back-button" (click)="onHome()">Home</p>
+    </mat-toolbar>
+  </div>
+  <div class="body-wrapper">
+    <div class="headline-container">
+      <h1>
+        Oops!
+      </h1>
+    </div>
+    <div class="error-container">
+      <p class="error-text">
+        Sorry,
+        we can’t seem to find the page you are looking for.
+        <br><br>
+        Error Code: 404
+        <br><br>
+        Try reaching some of these places instead:
+      </p>
+      <div class="link-wrapper">
+        <div class="link-container">
+          <mat-nav-list>
+            <mat-list-item role="navigation" (click)="onHome()">
+              <h3>Home</h3>
+            </mat-list-item>
+            <mat-list-item role="navigation">
+              <h3>About</h3>
+            </mat-list-item>
+            <mat-list-item role="navigation" (click)="onContact()">
+              <h3>Contact</h3>
+            </mat-list-item>
+            <mat-list-item role="navigation">
+              <h3>Apps</h3>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-wrapper">
+    <div class="footer-content">
+      <p class="footer-text">
+        &copy; Citium Technologies AB | 2024
+      </p>
+    </div>
+  </div>
+</div>

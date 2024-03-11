@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
+
 
 @Component({
   selector: 'app-contact',
@@ -8,4 +11,26 @@ import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
-export class ContactComponent {}
+export class ContactComponent {
+  theme: boolean;
+  activeRoute: string ='';
+
+  constructor(private router: Router, private route: ActivatedRoute,) {
+
+  }
+
+  ngOnInit() {
+    console.log(this.route.snapshot.url[0].path)
+    this.activeRoute = this.route.snapshot.url[0].path
+  }
+
+  setTheme(x: boolean) {
+    this.theme = x;
+    console.log(this.theme)
+  }
+
+  onHome() {
+    this.router.navigate(['/home']);
+  }
+
+}

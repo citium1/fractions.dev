@@ -69,12 +69,13 @@ h1 {
   position: relative;
 }
 
-.contact-container {
-  padding: 2rem 0.5rem;
+
+.error-container {
+  padding: 1rem 0.5rem;
 }
 
-.contact-container,
-.contact-text {
+.error-container,
+.error-text {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
@@ -82,33 +83,34 @@ h1 {
   position: relative;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.link-wrapper {
+  padding: 0 0.5rem;
 }
 
-a:hover {
+mat-list-item {
+  padding: 0;
+  line-height: 0.5rem;
+}
+
+mat-nav-list mat-list-item h3 {
+  display: inline-block;
+  /* font-size: 1.5rem;
+  font-weight: 400; */
+}
+
+
+mat-list-item {
+  height: auto;
+  position: relative;
+  /* left: -500px; */
+  width: 20rem;
+  height: auto;
+}
+
+mat-list mat-list-item:hover {
   cursor: pointer;
-  font-size: 10rem;
+  color: red;
 }
-
-.icon-section {
-  font-size: 2rem;
-  margin-top: 1.5rem;
-}
-
-i {
-  margin-right: 1rem;
-  cursor: pointer;
-  /* color: #ff80ab;*/
-}
-
-/* i:hover {
-  cursor: pointer;
-  color: coral;
-} */
-
-
 
 
 .footer-wrapper,

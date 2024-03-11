@@ -8,11 +8,34 @@
 }
 
 mat-toolbar {
-  background-color: #fff;
+  height: 4rem;
+  background: inherit;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+span.breadcrumbs,
+.theme {
+  padding: 0 1rem;
+}
+
+span.breadcrumbs,
+p.route {
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0;
+  width: auto;
+  cursor: pointer;
+  color: #585858;
+}
+
+.theme,
+i:hover {
+  cursor: pointer;
 }
 
 
@@ -72,7 +95,7 @@ h1 {
   padding: 2rem 0.5rem;
 }
 
-p {
+p.intro-text {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
@@ -98,36 +121,30 @@ p {
 
 .link-wrapper {
   padding: 0 0.5rem;
+  line-height: 4.5rem;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+mat-nav-list mat-list-item h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 5rem;
 }
 
-ul,
-li,
-h2 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 3.25rem;
-  color: #000;
-}
 
-li,
-h2:hover {
-  cursor: pointer;
-  color: #585858;
-}
-
-ul {
+mat-list-item {
+  height: auto;
   position: relative;
-  left: -500px;
+  /* left: -500px; */
   width: 20rem;
   height: auto;
   -webkit-animation: slide-h2 0.75s forwards 1s;
   animation: slide-h2 0.75s forwards 1s;
+}
+
+mat-list mat-list-item:hover {
+  cursor: pointer;
+  color: red;
 }
 
 @-webkit-keyframes slide-h2 {
@@ -173,19 +190,15 @@ ul {
   position: relative;
   width: auto;
   height: auto;
-  color: #fff;
+  /* color: transparent; */
   -webkit-animation: show-footer 0.2s forwards 2s;
   animation: show-footer 0.2s forwards 2s;
 }
 
 @-webkit-keyframes show-footer {
-  100% {
-    color: #000;
-  }
+  100% {}
 }
 
 @keyframes show-footer {
-  100% {
-    color: #000;
-  }
+  100% {}
 }
