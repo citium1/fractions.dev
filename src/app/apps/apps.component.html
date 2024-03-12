@@ -1,11 +1,12 @@
 <div class="contact-wrapper">
   <div class="header-wrapper">
-    <mat-toolbar color="" class="dark">
+    <mat-toolbar>
       <span class="breadcrumbs">
-        <p class="route" (click)="onHome()"> / {{activeRoute}}</p>
+        <p class="home" (click)="onHome()">home</p>
+        <pre> </pre>
+        <p class="route">/ {{activeRoute}}</p>
       </span>
-      <span class="spacer"></span>
-      <p class="back-button" (click)="onHome()">Home</p>
+      <!-- <p class="back-button" (click)="onHome()">Home</p> -->
     </mat-toolbar>
   </div>
   <div class="body-wrapper">

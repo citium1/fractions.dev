@@ -1,10 +1,10 @@
 .contact-wrapper {
   position: relative;
-  top: -2000px;
+  top: -1750px;
   width: auto;
   height: 100%;
-  -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s;
+  -webkit-animation: drop 0.9s forwards 0.5s;
+  animation: drop 0.9s forwards 0.5s;
 }
 
 .body-wrapper {
@@ -39,6 +39,18 @@ mat-toolbar {
 }
 
 
+span.breadcrumbs {
+  display: inline-flex;
+}
+
+.route {
+  opacity: 50%;
+}
+
+.home {
+  cursor: pointer;
+}
+
 span.breadcrumbs,
 p.back-button {
   background-color: transparent;
@@ -48,13 +60,6 @@ p.back-button {
   padding: 0 1rem;
   margin: 0;
   width: auto;
-  cursor: pointer;
-}
-
-span.breadcrumbs,
-p.back-button:hover {
-  cursor: pointer;
-  color: #585858;
 }
 
 .headline-container {
@@ -138,14 +143,5 @@ section .contact-nav .contact-button button:hover {
   position: relative;
   width: auto;
   height: auto;
-  -webkit-animation: show-footer 0.2s forwards 2s;
-  animation: show-footer 0.2s forwards 2s;
-}
-
-@-webkit-keyframes show-footer {
-  100% {}
-}
-
-@keyframes show-footer {
-  100% {}
+  opacity: 75%;
 }

@@ -27,6 +27,13 @@ export class ErrorComponent {
   }
     onContact() {
     this.router.navigate(['contact']);
-}
+    }
+    onAbout() {
+    this.router.navigate(['about']);
+  }
+  onApps() {
+    this.router.navigate(['apps']);
+      }
+
 
 }

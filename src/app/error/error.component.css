@@ -24,6 +24,18 @@ mat-toolbar {
 }
 
 
+span.breadcrumbs {
+  display: inline-flex;
+}
+
+.route {
+  opacity: 50%;
+}
+
+.home {
+  cursor: pointer;
+}
+
 span.breadcrumbs,
 p.back-button {
   background-color: transparent;
@@ -33,13 +45,10 @@ p.back-button {
   padding: 0 1rem;
   margin: 0;
   width: auto;
-  cursor: pointer;
 }
 
-span.breadcrumbs,
-p.back-button:hover {
+p.back-button {
   cursor: pointer;
-  color: #585858;
 }
 
 .headline-container {
@@ -130,4 +139,5 @@ mat-list mat-list-item:hover {
   position: relative;
   width: auto;
   height: auto;
+  opacity: 75%;
 }

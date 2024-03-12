@@ -16,21 +16,27 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
-span.breadcrumbs,
-.theme {
-  padding: 0 1rem;
+span.breadcrumbs {
+  display: inline-flex;
+}
+
+.route {
+  opacity: 50%;
+}
+
+.home {
+  cursor: pointer;
 }
 
 span.breadcrumbs,
-p.route {
+p.back-button {
   background-color: transparent;
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
+  padding: 0 1rem;
   margin: 0;
   width: auto;
-  cursor: pointer;
-  color: #585858;
 }
 
 mat-list mat-list-item span i:hover {
@@ -43,8 +49,8 @@ mat-list mat-list-item i {
   width: auto;
   height: auto;
   visibility: hidden;
-  -webkit-animation: show-toggle 0.2s forwards 2s;
-  animation: show-toggle 0.2s forwards 2s;
+  -webkit-animation: show-toggle 0.25s forwards 1.25s;
+  animation: show-toggle 0.25s forwards 1.25s;
 }
 
 @-webkit-keyframes show-toggle {
@@ -69,16 +75,16 @@ h1 {
   font-size: 3rem;
   line-height: 3.25rem;
   position: relative;
-  left: -500px;
+  /* left: -500px; */
   width: 20rem;
   height: auto;
-  -webkit-animation: slide-h1 0.75s forwards;
+  /* -webkit-animation: slide-h1 0.75s forwards;
   -webkit-animation-delay: 0s;
   animation: slide-h1 0.75s forwards;
-  animation-delay: 0s;
+  animation-delay: 0s; */
 }
 
-@-webkit-keyframes slide-h1 {
+/* @-webkit-keyframes slide-h1 {
   100% {
     left: 0;
   }
@@ -88,7 +94,7 @@ h1 {
   100% {
     left: 0;
   }
-}
+} */
 
 .intro-container {
   padding: 2rem 0.5rem;
@@ -99,13 +105,14 @@ p.intro-text {
   font-weight: 300;
   line-height: 1.25rem;
   position: relative;
-  left: -500px;
+  /* left: -500px; */
   width: 20rem;
   height: auto;
-  -webkit-animation: slide-intro 0.75s forwards 0.5s;
-  animation: slide-intro 0.75s forwards 0.5s;
+  /* -webkit-animation: slide-intro 0.75s forwards 0.5s;
+  animation: slide-intro 0.75s forwards 0.5s; */
 }
 
+/*
 @-webkit-keyframes slide-intro {
   100% {
     left: 0;
@@ -116,7 +123,7 @@ p.intro-text {
   100% {
     left: 0;
   }
-}
+} */
 
 .link-wrapper {
   padding: 0 0.5rem;
@@ -137,14 +144,18 @@ mat-list-item {
   left: -500px;
   width: auto;
   height: auto;
-  -webkit-animation: slide-h2 0.75s forwards 1s;
-  animation: slide-h2 0.75s forwards 1s;
+  -webkit-animation: slide-h2 0.5s forwards 0.5s;
+  animation: slide-h2 0.5s forwards 0.5s;
 }
 
-mat-list mat-list-item:hover {
-  cursor: pointer;
-  color: red;
+i:hover {
+  color: rgb(216, 27, 96);
 }
+
+.lightsOn {
+  color: rgb(216, 27, 96);
+}
+
 
 @-webkit-keyframes slide-h2 {
   100% {
@@ -189,15 +200,5 @@ mat-list mat-list-item:hover {
   position: relative;
   width: auto;
   height: auto;
-  /* color: transparent; */
-  -webkit-animation: show-footer 0.2s forwards 2s;
-  animation: show-footer 0.2s forwards 2s;
-}
-
-@-webkit-keyframes show-footer {
-  100% {}
-}
-
-@keyframes show-footer {
-  100% {}
+  opacity: 75%;
 }

@@ -1,6 +1,6 @@
 .contact-wrapper {
   position: relative;
-  top: -600px;
+  top: -750px;
   width: auto;
   height: 100%;
   -webkit-animation: drop 0.75s forwards 0.5s;
@@ -38,6 +38,17 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
+span.breadcrumbs {
+  display: inline-flex;
+}
+
+.route {
+  opacity: 50%;
+}
+
+.home {
+  cursor: pointer;
+}
 
 span.breadcrumbs,
 p.back-button {
@@ -48,13 +59,10 @@ p.back-button {
   padding: 0 1rem;
   margin: 0;
   width: auto;
-  cursor: pointer;
 }
 
-span.breadcrumbs,
-p.back-button:hover {
+p.back-button {
   cursor: pointer;
-  color: #585858;
 }
 
 .headline-container {
@@ -89,7 +97,8 @@ a {
 
 a:hover {
   cursor: pointer;
-  font-size: 10rem;
+  color: rgb(227, 100, 147);
+  ;
 }
 
 .icon-section {
@@ -100,14 +109,12 @@ a:hover {
 i {
   margin-right: 1rem;
   cursor: pointer;
-  /* color: #ff80ab;*/
 }
 
-/* i:hover {
-  cursor: pointer;
-  color: coral;
-} */
-
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: rgb(216, 27, 96);
+}
 
 
 
@@ -143,14 +150,5 @@ i {
   position: relative;
   width: auto;
   height: auto;
-  -webkit-animation: show-footer 0.2s forwards 2s;
-  animation: show-footer 0.2s forwards 2s;
-}
-
-@-webkit-keyframes show-footer {
-  100% {}
-}
-
-@keyframes show-footer {
-  100% {}
+  opacity: 75%;
 }

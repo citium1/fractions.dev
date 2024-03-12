@@ -3,18 +3,15 @@
   top: -2000px;
   width: auto;
   height: 100%;
-  -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s;
+  -webkit-animation: drop 1s forwards 0.5s;
+  animation: drop 1s forwards 0.5s;
 }
 
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
-  /* top: -500px; */
   width: auto;
   height: auto;
-  /* -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s; */
 }
 
 @-webkit-keyframes drop {
@@ -38,6 +35,17 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
+span.breadcrumbs {
+  display: inline-flex;
+}
+
+.route {
+  opacity: 50%;
+}
+
+.home {
+  cursor: pointer;
+}
 
 span.breadcrumbs,
 p.back-button {
@@ -48,13 +56,6 @@ p.back-button {
   padding: 0 1rem;
   margin: 0;
   width: auto;
-  cursor: pointer;
-}
-
-span.breadcrumbs,
-p.back-button:hover {
-  cursor: pointer;
-  color: #585858;
 }
 
 .headline-container {
@@ -101,12 +102,6 @@ mat-list mat-list-item h6 {
   font-weight: 300;
 }
 
-/* .footer-wrapper,
-.footer-content {
-  position: absolute;
-  bottom: 0;
-
-} */
 section .contact-nav .contact-button button:hover {
   cursor: pointer;
 }
@@ -115,6 +110,7 @@ section .contact-nav .contact-button button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 
@@ -144,14 +140,5 @@ section .contact-nav .contact-button button:hover {
   position: relative;
   width: auto;
   height: auto;
-  -webkit-animation: show-footer 0.2s forwards 2s;
-  animation: show-footer 0.2s forwards 2s;
-}
-
-@-webkit-keyframes show-footer {
-  100% {}
-}
-
-@keyframes show-footer {
-  100% {}
+  opacity: 75%;
 }
