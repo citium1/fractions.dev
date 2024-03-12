@@ -20,8 +20,11 @@ $dark-theme: mat.define-dark-theme((
 
 // Apply the dark theme by default
 @include mat.all-component-themes($dark-theme);
-// @include mat.button-theme($dark-theme);
+@include mat.button-theme($dark-theme);
 
+a, i{
+  cursor: pointer;
+}
 
 }
 

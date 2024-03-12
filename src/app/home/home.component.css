@@ -33,13 +33,28 @@ p.route {
   color: #585858;
 }
 
-.theme,
-i:hover {
+mat-list mat-list-item span i:hover {
   cursor: pointer;
 }
 
 
-mat-slide-toggle {
+
+mat-list mat-list-item .lightUp {
+  animation: blinker;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes blinker {
+  100% {
+    color: red;
+  }
+}
+
+mat-list mat-list-item {
   position: relative;
   width: auto;
   height: auto;

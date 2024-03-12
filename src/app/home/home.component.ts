@@ -1,17 +1,18 @@
 import { style } from '@angular/animations';
-import { NgClass, NgStyle } from '@angular/common';
+import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { Component, ElementRef, Inject, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContactComponent } from '../contact/contact.component';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatToolbarModule, MatSlideToggleModule, FormsModule, MatListModule],
+  imports: [MatToolbarModule, MatSlideToggleModule, FormsModule, MatListModule, MatButtonModule, ContactComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -22,14 +23,12 @@ export class HomeComponent {
 
     menu: string[] = ['About', 'Contact', 'Apps'];
 
-  constructor(private renderer: Renderer2, private router: Router, private route: ActivatedRoute, private contact: ContactComponent) {
+  constructor(private renderer: Renderer2, private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
     console.log(this.route.snapshot.url[0].path)
     this.activeRoute = this.route.snapshot.url[0].path
-        this.contact.setTheme(this.lightTheme)
-
   }
 
   onContact() {
@@ -45,7 +44,6 @@ export class HomeComponent {
                 this.lightTheme = false;
 
     }
-    this.contact.setTheme(this.lightTheme)
   }
 
 

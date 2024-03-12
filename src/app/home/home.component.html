@@ -6,7 +6,12 @@
       </span>
       <span class="spacer"></span>
       <div class="theme">
-        <i class="fa-regular fa-lightbulb bulb" (click)="onToggle()"></i>
+        <mat-list>
+          <mat-list-item color="warn">
+            <i class="fa-regular fa-lightbulb bulb" (click)="onToggle()"
+              [ngClass]="lightTheme ? 'lightUp' : 'turnedOff' "></i>
+          </mat-list-item>
+        </mat-list>
       </div>
     </mat-toolbar>
   </div>
@@ -22,8 +27,8 @@
         development we are
         here to
         help you deliver your next application.
-        <br><br>
 
+        <br><br>
         Web Development | Product Development | Project Management | Analysis | and more.
         <br><br>
         Currently Product Owner for the Frontend Development Platform at Swedbank.
@@ -33,7 +38,9 @@
       <div class="link-container">
         <mat-nav-list>
           <mat-list-item role="navigation">
-            <h2>About</h2>
+            <a routerLink="/contact">
+              <h2>About </h2>
+            </a>
           </mat-list-item>
           <mat-list-item role="navigation" (click)="onContact()">
             <h2>Contact</h2>
