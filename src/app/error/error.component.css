@@ -1,10 +1,7 @@
 .contact-wrapper {
   position: relative;
-  top: -600px;
   width: auto;
   height: 100%;
-  -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s;
 }
 
 .body-wrapper {
@@ -15,18 +12,6 @@
   height: auto;
   /* -webkit-animation: drop 0.75s forwards 0.5s;
   animation: drop 0.75s forwards 0.5s; */
-}
-
-@-webkit-keyframes drop {
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes drop {
-  100% {
-    top: 0;
-  }
 }
 
 mat-toolbar {
@@ -145,14 +130,4 @@ mat-list mat-list-item:hover {
   position: relative;
   width: auto;
   height: auto;
-  -webkit-animation: show-footer 0.2s forwards 2s;
-  animation: show-footer 0.2s forwards 2s;
-}
-
-@-webkit-keyframes show-footer {
-  100% {}
-}
-
-@keyframes show-footer {
-  100% {}
 }

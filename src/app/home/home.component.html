@@ -37,7 +37,7 @@
     <div class="link-wrapper">
       <div class="link-container">
         <mat-nav-list>
-          <mat-list-item role="navigation">
+          <mat-list-item role="navigation" (click)="onAbout()">
             <a routerLink="/contact">
               <h2>About </h2>
             </a>
@@ -45,7 +45,7 @@
           <mat-list-item role="navigation" (click)="onContact()">
             <h2>Contact</h2>
           </mat-list-item>
-          <mat-list-item role="navigation">
+          <mat-list-item role="navigation" (click)="onApps()">
             <h2>Apps</h2>
           </mat-list-item>
         </mat-nav-list>

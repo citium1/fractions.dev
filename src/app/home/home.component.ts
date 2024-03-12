@@ -33,8 +33,13 @@ export class HomeComponent {
 
   onContact() {
     this.router.navigate(['contact']);
-}
-
+  }
+  onAbout() {
+    this.router.navigate(['about'])
+  }
+ onApps() {
+    this.router.navigate(['apps'])
+  }
   onToggle() {
     if (this.lightTheme === false) {
       this.renderer.addClass(document.body, 'light')

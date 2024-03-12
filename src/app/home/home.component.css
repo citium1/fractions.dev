@@ -38,23 +38,7 @@ mat-list mat-list-item span i:hover {
 }
 
 
-
-mat-list mat-list-item .lightUp {
-  animation: blinker;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-
-}
-
-@keyframes blinker {
-  100% {
-    color: red;
-  }
-}
-
-mat-list mat-list-item {
+mat-list mat-list-item i {
   position: relative;
   width: auto;
   height: auto;
@@ -150,8 +134,8 @@ mat-nav-list mat-list-item h2 {
 mat-list-item {
   height: auto;
   position: relative;
-  /* left: -500px; */
-  width: 20rem;
+  left: -500px;
+  width: auto;
   height: auto;
   -webkit-animation: slide-h2 0.75s forwards 1s;
   animation: slide-h2 0.75s forwards 1s;

@@ -20,14 +20,13 @@ export class ContactComponent {
   }
 
   ngOnInit() {
-    console.log(this.route.snapshot.url[0].path)
     this.activeRoute = this.route.snapshot.url[0].path
   }
 
-  setTheme(x: boolean) {
-    this.theme = x;
-    console.log(this.theme)
-  }
+  // setTheme(x: boolean) {
+  //   this.theme = x;
+  //   console.log(this.theme)
+  // }
 
   onHome() {
     this.router.navigate(['/home']);
