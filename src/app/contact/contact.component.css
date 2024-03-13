@@ -97,8 +97,7 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: rgb(227, 100, 147);
-  ;
+  color: var(--main-color);
 }
 
 .icon-section {
@@ -113,7 +112,7 @@ i {
 
 .fa-github:hover,
 .fa-linkedin:hover {
-  color: rgb(216, 27, 96);
+  color: var(--main-color);
 }
 
 

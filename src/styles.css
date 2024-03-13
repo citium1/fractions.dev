@@ -2,6 +2,7 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
+
 *,
 *::before,
 *::after {
@@ -13,6 +14,9 @@
 */
 * {
   margin: 0;
+}
+:root{
+  --main-color: #ff6200;
 }
 
 /*

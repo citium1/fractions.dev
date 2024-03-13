@@ -75,26 +75,10 @@ h1 {
   font-size: 3rem;
   line-height: 3.25rem;
   position: relative;
-  /* left: -500px; */
   width: 20rem;
   height: auto;
-  /* -webkit-animation: slide-h1 0.75s forwards;
-  -webkit-animation-delay: 0s;
-  animation: slide-h1 0.75s forwards;
-  animation-delay: 0s; */
 }
 
-/* @-webkit-keyframes slide-h1 {
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide-h1 {
-  100% {
-    left: 0;
-  }
-} */
 
 .intro-container {
   padding: 2rem 0.5rem;
@@ -149,12 +133,13 @@ mat-list-item {
 }
 
 i:hover {
-  color: rgb(216, 27, 96);
+  color: var(--main-color);
 }
 
 .lightsOn {
-  color: rgb(216, 27, 96);
+  color: var(--main-color);
 }
+
 
 
 @-webkit-keyframes slide-h2 {
