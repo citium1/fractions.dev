@@ -4,3 +4,4 @@
 //TODO add news page
 //TODO add google analytics
 //TODO update text
+//TODO add splash screen
