@@ -5,22 +5,29 @@
 // Define a dark theme
 $dark-theme: mat.define-dark-theme((
  color: (
-   primary: mat.define-palette(mat.$pink-palette),
-   accent: mat.define-palette(mat.$blue-grey-palette),
+   primary: mat.define-palette(mat.$pink-palette, 600),
+   accent: mat.define-palette(mat.$blue-grey-palette, 500),
+   warn: mat.define-palette(mat.$orange-palette, 500),
  ),
+  // Only include `typography` and `density` in the default dark theme.
+  typography: mat.define-typography-config(),
+  density: 0,
 ));
-
 
 // Define a light theme
 $light-theme: mat.define-light-theme((
  color: (
    primary: mat.define-palette(mat.$indigo-palette),
-   accent: mat.define-palette(mat.$orange-palette),
+   accent: mat.define-palette(mat.$pink-palette),
+  warn: mat.define-palette(mat.$orange-palette),
  ),
 ));
 
+
+// Apply the dark theme by default
 @include mat.all-component-themes($dark-theme);
 
+// Apply light theme
 .light{
-  @include mat.all-component-colors($light-theme);
+ @include mat.all-component-colors($light-theme);
 }
