@@ -132,10 +132,6 @@ section .contact-nav .contact-button button:hover {
   background-color: transparent;
 }
 
-.footer-text:hover {
-  cursor: pointer;
-}
-
 .footer-content {
   position: relative;
   width: auto;

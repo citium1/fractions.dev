@@ -3,7 +3,6 @@
 }
 
 .body-wrapper {
-
   margin: 1.5rem;
 }
 
@@ -28,8 +27,7 @@ span.breadcrumbs {
   cursor: pointer;
 }
 
-span.breadcrumbs,
-p.back-button {
+span.breadcrumbs {
   background-color: transparent;
   font-size: 0.8rem;
   font-weight: 300;
@@ -89,25 +87,11 @@ p.intro-text {
   font-weight: 300;
   line-height: 1.25rem;
   position: relative;
-  /* left: -500px; */
-  width: 20rem;
+  width: auto;
   height: auto;
-  /* -webkit-animation: slide-intro 0.75s forwards 0.5s;
-  animation: slide-intro 0.75s forwards 0.5s; */
+
 }
 
-/*
-@-webkit-keyframes slide-intro {
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide-intro {
-  100% {
-    left: 0;
-  }
-} */
 
 .link-wrapper {
   padding: 0 0.5rem;
@@ -139,8 +123,6 @@ i:hover {
 .lightsOn {
   color: var(--main-color);
 }
-
-
 
 @-webkit-keyframes slide-h2 {
   100% {
@@ -174,11 +156,6 @@ i:hover {
   margin: 0;
   padding: 0;
   width: auto;
-}
-
-.footer-text:hover {
-  cursor: pointer;
-  color: #585858;
 }
 
 .footer-content {

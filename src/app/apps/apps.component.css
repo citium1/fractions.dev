@@ -10,11 +10,8 @@
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
-  /* top: -500px; */
   width: auto;
   height: auto;
-  /* -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s; */
 }
 
 @-webkit-keyframes drop {
@@ -38,7 +35,6 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
-
 span.breadcrumbs {
   display: inline-flex;
 }
@@ -51,8 +47,7 @@ span.breadcrumbs {
   cursor: pointer;
 }
 
-span.breadcrumbs,
-p.back-button {
+span.breadcrumbs {
   background-color: transparent;
   font-size: 0.8rem;
   font-weight: 300;
@@ -100,12 +95,6 @@ a {
   color: inherit;
 }
 
-/* .footer-wrapper,
-.footer-content {
-  position: absolute;
-  bottom: 0;
-
-} */
 section .contact-nav .contact-button button:hover {
   cursor: pointer;
 }
@@ -133,10 +122,6 @@ section .contact-nav .contact-button button:hover {
   padding: 0;
   width: auto;
   background-color: transparent;
-}
-
-.footer-text:hover {
-  cursor: pointer;
 }
 
 .footer-content {

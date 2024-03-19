@@ -7,11 +7,8 @@
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
-  /* top: -500px; */
   width: auto;
   height: auto;
-  /* -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s; */
 }
 
 mat-toolbar {
@@ -36,8 +33,7 @@ span.breadcrumbs {
   cursor: pointer;
 }
 
-span.breadcrumbs,
-p.back-button {
+span.breadcrumbs {
   background-color: transparent;
   font-size: 0.8rem;
   font-weight: 300;
@@ -45,10 +41,6 @@ p.back-button {
   padding: 0 1rem;
   margin: 0;
   width: auto;
-}
-
-p.back-button {
-  cursor: pointer;
 }
 
 .headline-container {
@@ -88,15 +80,12 @@ mat-list-item {
 
 mat-nav-list mat-list-item h3 {
   display: inline-block;
-  /* font-size: 1.5rem;
-  font-weight: 400; */
-}
 
+}
 
 mat-list-item {
   height: auto;
   position: relative;
-  /* left: -500px; */
   width: 20rem;
   height: auto;
 }
@@ -129,10 +118,6 @@ mat-list mat-list-item:hover {
   padding: 0;
   width: auto;
   background-color: transparent;
-}
-
-.footer-text:hover {
-  cursor: pointer;
 }
 
 .footer-content {

@@ -10,11 +10,8 @@
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
-  /* top: -500px; */
   width: auto;
   height: auto;
-  /* -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s; */
 }
 
 @-webkit-keyframes drop {
@@ -115,13 +112,10 @@ i {
   color: var(--main-color);
 }
 
-
-
 .footer-wrapper,
 .footer-content {
   position: absolute;
   bottom: 0;
-
 }
 
 .footer-wrapper,
@@ -139,10 +133,6 @@ i {
   padding: 0;
   width: auto;
   background-color: transparent;
-}
-
-.footer-text:hover {
-  cursor: pointer;
 }
 
 .footer-content {
