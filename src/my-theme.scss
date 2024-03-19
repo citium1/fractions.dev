@@ -4,9 +4,6 @@
 
 
 // Define a dark theme
-.dark{
-
-
 $dark-theme: mat.define-dark-theme((
  color: (
    primary: mat.define-palette(mat.$pink-palette, 600),
@@ -18,36 +15,20 @@ $dark-theme: mat.define-dark-theme((
   density: 0,
 ));
 
-// Apply the dark theme by default
-@include mat.all-component-themes($dark-theme);
-@include mat.button-theme($dark-theme);
-
-a, i, button{
-  cursor: pointer;
-}
-
-}
-
 // Define a light theme
-.light{
 $light-theme: mat.define-light-theme((
  color: (
    primary: mat.define-palette(mat.$indigo-palette),
    accent: mat.define-palette(mat.$pink-palette),
   warn: mat.define-palette(mat.$orange-palette),
-
  ),
 ));
 
 
- @include mat.all-component-themes($light-theme);
- @include mat.button-color($light-theme);
+// Apply the dark theme by default
+@include mat.all-component-themes($dark-theme);
 
-
-.back-button{
-  color: #212121;
-}
-
-
-
+// Apply light theme
+.light{
+ @include mat.all-component-colors($light-theme);
 }
