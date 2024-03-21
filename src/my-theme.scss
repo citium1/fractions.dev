@@ -31,3 +31,15 @@ $light-theme: mat.define-light-theme((
 .light{
  @include mat.all-component-colors($light-theme);
 }
+
+@media (min-width: 720px){
+  p.intro-text {
+    width: 75%;
+  }
+}
+
+@media (min-width: 990px){
+  p.intro-text {
+    width: 55%;
+  }
+}

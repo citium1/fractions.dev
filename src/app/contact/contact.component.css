@@ -7,6 +7,10 @@
   animation: drop 0.75s forwards 0.5s;
 }
 
+.header-wrapper{
+  width: 100%;
+}
+
 .body-wrapper {
   margin: 1.5rem;
   position: relative;
@@ -140,4 +144,19 @@ i {
   width: auto;
   height: auto;
   opacity: 75%;
+}
+
+@media (min-width: 720px){
+  .body-text {
+    width: 80%;
+  }
+  .contact-text{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 990px){
+  .body-text {
+    width: 60%;
+  }
 }

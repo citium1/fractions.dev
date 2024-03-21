@@ -1,5 +1,12 @@
 .home-wrapper {
   height: 100%;
+  /* display:flex; 
+   flex-direction: column;
+  align-items: center; */
+}
+
+.header-wrapper{
+  width: 100%;
 }
 
 .body-wrapper {
@@ -12,7 +19,7 @@ mat-toolbar {
 }
 
 .spacer {
-  flex: 1 1 auto;
+  flex: 1 1 100%;
 }
 
 span.breadcrumbs {
@@ -82,14 +89,12 @@ h1 {
   padding: 2rem 0.5rem;
 }
 
-p.intro-text {
+p.intro-text{
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
   position: relative;
-  width: auto;
   height: auto;
-
 }
 
 
@@ -163,4 +168,20 @@ i:hover {
   width: auto;
   height: auto;
   opacity: 75%;
+}
+
+@media (min-width: 720px){
+  .body-text {
+    width: 80%;
+  }
+  p.intro-text{
+    font-size: 0.9rem;
+  }
+
+@media (min-width: 990px){
+  .body-text {
+    width: 60%;
+  }
+}
+
 }

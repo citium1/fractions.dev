@@ -1,10 +1,14 @@
-.contact-wrapper {
+.apps-wrapper {
   position: relative;
   top: -1750px;
   width: auto;
   height: 100%;
   -webkit-animation: drop 0.9s forwards 0.5s;
   animation: drop 0.9s forwards 0.5s;
+}
+
+.header-wrapper{
+  width: 100%;
 }
 
 .body-wrapper {
@@ -69,12 +73,12 @@ h1 {
   position: relative;
 }
 
-.about-container {
+.apps-container {
   padding: 2rem 0.5rem;
 }
 
-.about-container,
-.about-text {
+.apps-container,
+.apps-text {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
@@ -95,6 +99,11 @@ a {
   color: inherit;
 }
 
+a:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
 section .contact-nav .contact-button button:hover {
   cursor: pointer;
 }
@@ -103,6 +112,7 @@ section .contact-nav .contact-button button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5rem;
 }
 
 
@@ -129,4 +139,19 @@ section .contact-nav .contact-button button:hover {
   width: auto;
   height: auto;
   opacity: 75%;
+}
+
+@media (min-width: 720px){
+  .body-text {
+    width: 80%;
+  }
+  .apps-text, .content-text{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 990px){
+  .body-text {
+    width: 60%;
+  }
 }

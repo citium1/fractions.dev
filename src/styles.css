@@ -59,13 +59,3 @@ body {
 }
 
 
-@media (max-width: 480px) {
-  .body-wrapper{
-    margin: 0 10rem;
-  }
-
-  p.intro-text {
-    width: 20rem;
-  }
-
-}

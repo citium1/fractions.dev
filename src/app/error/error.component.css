@@ -1,7 +1,11 @@
-.contact-wrapper {
+.error-wrapper {
   position: relative;
   width: auto;
   height: 100%;
+}
+
+.header-wrapper{
+  width: 100%;
 }
 
 .body-wrapper {
@@ -125,4 +129,19 @@ mat-list mat-list-item:hover {
   width: auto;
   height: auto;
   opacity: 75%;
+}
+
+@media (min-width: 720px){
+  .body-text {
+    width: 80%;
+  }
+  .error-text{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 990px){
+  .body-text {
+    width: 60%;
+  }
 }
