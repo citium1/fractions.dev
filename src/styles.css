@@ -5,16 +5,8 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-}
 :root{
   --main-color: #ff6200;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -33,16 +25,6 @@ select {
   font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
 #root,
 #__next {
   isolation: isolate;
@@ -51,11 +33,8 @@ h6 {
 html,
 body {
   height: 100%;
-}
-
-body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
+#wrapper { width: 100%; margin: 0 auto; }
