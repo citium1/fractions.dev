@@ -37,4 +37,19 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-#wrapper { width: 100%; margin: 0 auto; }
+@media (max-width: 720px) {
+  .body-text {
+    width: 80%;
+  }
+
+  p.intro-text {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 990px) {
+    .body-text {
+      width: 60%;
+    }
+  }
+
+}

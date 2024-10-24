@@ -9,7 +9,6 @@
 
 .body-wrapper {
   padding: 0rem 15rem;
-
 }
 
 mat-toolbar {
@@ -157,19 +156,56 @@ h2 {
   opacity: 75%;
 }
 
-@media (min-width: 720px) {
-  .body-text {
-    width: 80%;
+@media (max-width: 440px) {
+  .body-wrapper {
+    padding: 0 2rem;
   }
-
-  p.intro-text {
-    font-size: 0.9rem;
+  mat-toolbar {
+    height: 3rem;
+    padding: 4rem 2rem;
+    font-size: 1.5rem;
   }
-
-  @media (min-width: 990px) {
-    .body-text {
-      width: 60%;
+  span.breadcrumbs {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+h1 {
+  font-size: 3.5rem;
+  margin: 10rem 0 0 0;
+}
+h2 {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+}
+.link-container .link h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+  @media (max-width: 990px) {
+    .body-wrapper {
+      padding: 0 2rem;
     }
+    mat-toolbar {
+      height: 3rem;
+      padding: 4rem 2rem;
+      font-size: 1.5rem;
+    }
+    span.breadcrumbs {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  h1 {
+    font-size: 3.5rem;
+    margin: 10rem 0 0 0;
+  }
+  h2 {
+    font-size: 1.75rem;
+    padding: 1rem 0;
+  }
+  .link-container .link h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
   }
 
 }
