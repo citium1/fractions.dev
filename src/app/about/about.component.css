@@ -47,7 +47,7 @@ p.back-button {
 
 h1 {
   font-size: 8rem;
-  margin: 10rem 0 0 0;
+  margin: 4rem 0 0 0;
   position: relative;
   opacity: 90%;
 }
@@ -96,7 +96,7 @@ h5 {
   line-height: 1.5rem;
   width: auto;
   position: relative;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 
 .hero img {
@@ -109,6 +109,28 @@ h5 {
   padding-top: 0rem;
 }
 
+.skills-card{
+  width: 100%;
+  height: auto;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+}
+
+.strategy-card, .management-card, .techincal-card{
+height: 100%;
+width: 33%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+text-align: left;
+list-style-type: none;
+}
+.strategy-card h4, .management-card h4, .techincal-card h4{
+  margin-left: 1rem;
+}
 
 mat-list mat-list-item {
   height: 1rem;

@@ -47,7 +47,7 @@ p.back-button {
 
 h1 {
   font-size: 8rem;
-  margin: 10rem 0 0 0;
+  margin: 4rem 0 0 0;
   position: relative;
   opacity: 90%;
 }
@@ -87,17 +87,12 @@ h5 {
   line-height: 1.5rem;
   width: auto;
   position: relative;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 
 .content-section {
   padding-top: 0rem;
 }
-
-/* .content-section .content-header,
-.apps {
-  padding: 0.5rem 0;
-} */
 
 a {
   color: inherit;
@@ -112,7 +107,14 @@ section .contact-nav .contact-button button:hover {
   cursor: pointer;
 }
 
-.contact-link-bottom {
+.contact-link {
+  display: flex;
+}
+
+.contact-link a {
+  margin-right: 1rem;
+}
+.contact-link, .contact-link-bottom {
   margin: 2rem 0;
 }
 
