@@ -7,7 +7,6 @@
         <p class="route">/ {{activeRoute}}</p>
       </span>
       <span class="spacer"></span>
-      <!-- <p class="back-button" (click)="onHome()">Home</p> -->
     </mat-toolbar>
   </div>
   <div class="body-wrapper ">
@@ -32,6 +31,16 @@
           coding. Hampus is a generalist with an open-minded approach, high adaptability, and a constant eagerness to
           learn.
         </p>
+        <div class="contact-link">
+          <a>
+            <h4 routerLink="/contact">/contact </h4>
+          </a>
+          <a href="https://drive.usercontent.google.com/uc?id=1HPGE7a1u9XalUP2wKwrk4r5hoZ02k89p&export=download"
+            target="_blank">
+            <h4> /download résumé </h4>
+          </a>
+        </div>
+
       </div>
       <div class="content-section experience">
         <h2 class="content-header">Experience</h2>
@@ -87,57 +96,57 @@
         </div>
 
       </div>
+      <div class="hero">
+        <img src="../../assets/img.jpg" height="1000px">
+      </div>
       <div class="content-section skills">
         <h2 class="content-header">Skills</h2>
-        <p class="content-text body-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          <br><br>
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse
-          cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <h4>Management skills</h4>
-        <mat-list>
-          <mat-list-item>
-            <h5> > Product Development</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Platform Delivery</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Solution Architecture</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Strategic Planning & Technical Transformation</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Agile Methodologies</h5>
-          </mat-list-item>
-        </mat-list>
+        <div class="content-text body-text skills">
+          <div class="skills-card management">
+            <h4>Management skills</h4>
+            <mat-list>
+              <mat-list-item>
+                <h5> > Product Development</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Platform Delivery</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Solution Architecture</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Strategic Planning & Technical Transformation</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Agile Methodologies</h5>
+              </mat-list-item>
+            </mat-list>
+          </div>
+          <div class="skills-card technical">
+            <h4>Technical skills</h4>
+            <mat-list>
+              <mat-list-item>
+                <h5> > TypeScript</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Angular</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > REST API's</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Microsoft Azure</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > DevOps and CI/CD Practices</h5>
+              </mat-list-item>
+              <mat-list-item>
+                <h5> > Monorepos</h5>
+              </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
 
-        <h4>Technical skills</h4>
-        <mat-list>
-          <mat-list-item>
-            <h5> > TypeScript</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Angular</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > REST API's</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Microsoft Azure</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > DevOps and CI/CD Practices</h5>
-          </mat-list-item>
-          <mat-list-item>
-            <h5> > Monorepos</h5>
-          </mat-list-item>
-        </mat-list>
       </div>
 
       <div class="content-section education body-text">
@@ -162,12 +171,11 @@
           Thesis at Nexer (Sigma IT Consulting) on BI in Strategic Procurement & Manufacturing.
         </p>
       </div>
-      <section class="contact-nav">
-        <div class="contact-button">
-          <button mat-raised-button color="primary" (click)="onContact()"> Contact</button>
-        </div>
-      </section>
-
+      <div class="contact-link-bottom">
+        <a>
+          <h4 routerLink="/contact">/contact </h4>
+        </a>
+      </div>
     </div>
     <div class="footer-wrapper">
       <div class="footer-content">

@@ -78,6 +78,15 @@ h4 {
 
 h5 {
   font-weight: 400;
+  margin: 0;
+}
+
+.contact-link {
+  display: flex;
+}
+
+.contact-link a {
+  margin-right: 1rem;
 }
 
 .about-container,
@@ -90,19 +99,16 @@ h5 {
   opacity: 80%;
 }
 
-.current-assignment {
-  display: flex;
-  flex-direction: row;
+.hero img {
+  margin: 2rem 0;
+  height: auto;
+  width: auto;
 }
 
 .content-section {
   padding-top: 0rem;
 }
 
-.content-section .content-header,
-.technology {
-  padding: 0.5rem 0;
-}
 
 mat-list mat-list-item {
   height: 1rem;
@@ -114,20 +120,13 @@ mat-list mat-list-item h6 {
   font-weight: 300;
 }
 
-section .contact-nav .contact-button button:hover {
-  cursor: pointer;
-}
-
 a:hover {
   cursor: pointer;
   color: var(--main-color);
 }
 
-.contact-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem;
+.contact-link-bottom {
+  margin: 2rem 0;
 }
 
 .footer-wrapper {

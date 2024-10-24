@@ -43,7 +43,6 @@ export class HomeComponent {
 
   getTheme() {
     this.lightTheme = this.renderer.getTheme()
-    console.log(this.lightTheme)
   }
   onToggle() {
     this.renderer.toggleTheme();
