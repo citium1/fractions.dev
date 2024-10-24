@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <mat-toolbar>
       <span class="breadcrumbs">
-        <p class="home" (click)="onHome()">home</p>
+        <p class="home" (click)="onHome()">/ home</p>
         <pre> </pre>
         <p class="route">/ {{activeRoute}}</p>
       </span>
@@ -17,13 +17,13 @@
       </h1>
     </div>
     <div class="contact-container">
-      <p class="contact-text body-text">
+      <p class="contact-text">
         Do you need help with your next challenge, or looking to staff additional resources for your organization? Dont
         hesitate to reach out!
 
         <br><br>
-       <b>Email: </b> <a href="mailto:hello@nightmares.io">hello&#64;nightmares.io</a><br>
-       <b>Phone: </b> <a href="tel:+46703155239">+46 70 31 55 239</a> <br>
+        <b>Email: </b> <a href="mailto:hello@nightmares.io">hello&#64;nightmares.io</a><br>
+        <b>Phone: </b> <a href="tel:+46703155239">+46 70 31 55 239</a> <br>
       </p>
       <div class="link-wrapper">
         <div class="link-container">
@@ -41,7 +41,8 @@
   <div class="footer-wrapper">
     <div class="footer-content">
       <p class="footer-text">
-        &copy; Nightmares AB | 2024
+        <a routerLink="/home">
+          &copy; Nightmares AB | 2024</a>
       </p>
     </div>
   </div>

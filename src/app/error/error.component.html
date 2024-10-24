@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <mat-toolbar>
       <span class="breadcrumbs">
-        <p class="home" (click)="onHome()">home</p>
+        <p class="home" (click)="onHome()">/ home</p>
         <pre> </pre>
         <p class="route">/ {{activeRoute}}</p>
       </span>
@@ -49,7 +49,8 @@
   <div class=" footer-wrapper">
     <div class="footer-content">
       <p class="footer-text">
-        &copy; Nightmares AB | 2024
+        <a routerLink="/home">
+          &copy; Nightmares AB | 2024</a>
       </p>
     </div>
   </div>

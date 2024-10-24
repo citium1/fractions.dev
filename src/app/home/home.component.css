@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.header-wrapper{
+.header-wrapper {
   width: 100%;
 }
 
@@ -16,14 +16,11 @@ mat-toolbar {
   height: 4rem;
   background: inherit;
   width: auto;
+  padding: 3rem;
 }
 
 .spacer {
   flex: 1 1 100%;
-}
-
-span.breadcrumbs {
-  display: inline-flex;
 }
 
 .route {
@@ -35,21 +32,18 @@ span.breadcrumbs {
 }
 
 span.breadcrumbs {
+  display: inline-flex;
   background-color: transparent;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.25rem;
-  padding: 0 1rem;
   margin: 0;
   width: auto;
 }
 
-mat-list mat-list-item span i:hover {
-  cursor: pointer;
-}
-
 
 mat-list mat-list-item i {
+  opacity: 50%;
   position: relative;
   width: auto;
   height: auto;
@@ -58,8 +52,9 @@ mat-list mat-list-item i {
   animation: show-toggle 0.25s forwards 1.25s;
 }
 
-mat-list mat-list-item i:hover{
+mat-list mat-list-item i:hover {
   color: var(--main-color);
+  opacity: 100%;
   cursor: pointer;
 }
 
@@ -76,22 +71,22 @@ mat-list mat-list-item i:hover{
 }
 
 h1 {
-  font-size: 5rem;
-  margin: 5rem 0 0 0;
+  font-size: 8rem;
+  margin: 15rem 0 0 0;
   position: relative;
+  opacity: 90%;
 }
 
-h2{
-  font-size: 2rem;
+h2 {
+  font-size: 2.5rem;
   margin: 0;
-  color: lightgray;
+  opacity: 70%;
 }
-
 
 .link-container {
   height: auto;
   position: relative;
-  left: -500px;
+  left: -700px;
   height: auto;
   -webkit-animation: slide-h2 0.5s forwards 0.5s;
   animation: slide-h2 0.5s forwards 0.5s;
@@ -101,20 +96,21 @@ h2{
   display: inline;
 }
 
-.link-container .link h3{
+.link-container .link h3 {
   display: inline;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
-  color: rgb(130, 129, 129);
+  opacity: 50%;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 4rem;
 }
 
 
 .link-container .link h3:hover {
   color: var(--main-color);
   cursor: pointer;
+  opacity: 100%;
 }
 
 .lightsOn {
@@ -134,14 +130,14 @@ h2{
 }
 
 .footer-wrapper {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
 .footer-wrapper,
 .footer-content {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
   padding: 1rem;
   margin: auto;
@@ -161,18 +157,19 @@ h2{
   opacity: 75%;
 }
 
-@media (min-width: 720px){
+/* @media (min-width: 720px) {
   .body-text {
     width: 80%;
   }
-  p.intro-text{
+
+  p.intro-text {
     font-size: 0.9rem;
   }
 
-@media (min-width: 990px){
-  .body-text {
-    width: 60%;
+  @media (min-width: 990px) {
+    .body-text {
+      width: 60%;
+    }
   }
-}
 
-}
+} */

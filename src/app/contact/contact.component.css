@@ -1,46 +1,26 @@
 .contact-wrapper {
   position: relative;
-  top: -750px;
-  width: auto;
   height: 100%;
-  -webkit-animation: drop 0.75s forwards 0.5s;
-  animation: drop 0.75s forwards 0.5s;
 }
 
-.header-wrapper{
+.header-wrapper {
   width: 100%;
 }
 
 .body-wrapper {
-  margin: 1.5rem;
-  position: relative;
-  width: auto;
-  height: auto;
+  padding: 0rem 15rem;
 }
 
-@-webkit-keyframes drop {
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes drop {
-  100% {
-    top: 0;
-  }
-}
 
 mat-toolbar {
   height: 4rem;
   background: inherit;
+  padding: 3rem;
+  font-size: 1rem;
 }
 
 .spacer {
   flex: 1 1 auto;
-}
-
-span.breadcrumbs {
-  display: inline-flex;
 }
 
 .route {
@@ -53,52 +33,50 @@ span.breadcrumbs {
 
 span.breadcrumbs,
 p.back-button {
+  display: inline-flex;
   background-color: transparent;
-  font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
-  padding: 0 1rem;
   margin: 0;
   width: auto;
 }
 
-p.back-button {
-  cursor: pointer;
-}
-
 .headline-container {
-  padding: 2rem 0.5rem;
+  padding: 2rem 0;
   height: auto;
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3.25rem;
-  height: auto;
+  font-size: 8rem;
+  margin: 10rem 0 0 0;
   position: relative;
+  opacity: 90%;
 }
+
 
 .contact-container {
-  padding: 2rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  width: auto;
+  position: relative;
+  opacity: 80%;
 }
 
-.contact-container,
-.contact-text {
-  font-size: 0.8rem;
-  font-weight: 300;
-  line-height: 1.25rem;
-  width: 100%;
-  position: relative;
+.content-section {
+  padding-top: 1.5rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+
 }
 
 a:hover {
   cursor: pointer;
   color: var(--main-color);
+  opacity: 100%;
 }
 
 .icon-section {
@@ -114,18 +92,19 @@ i {
 .fa-github:hover,
 .fa-linkedin:hover {
   color: var(--main-color);
+  opacity: 100%;
 }
 
-.footer-wrapper,
-.footer-content {
-  position: absolute;
+
+.footer-wrapper {
+  position: fixed;
   bottom: 0;
 }
 
 .footer-wrapper,
 .footer-content {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
   padding: 1rem;
   margin: auto;
@@ -146,17 +125,18 @@ i {
   opacity: 75%;
 }
 
-@media (min-width: 720px){
+/* @media (min-width: 720px) {
   .body-text {
     width: 80%;
   }
-  .contact-text{
+
+  .contact-text {
     font-size: 0.9rem;
   }
 }
 
-@media (min-width: 990px){
+@media (min-width: 990px) {
   .body-text {
     width: 60%;
   }
-}
+} */

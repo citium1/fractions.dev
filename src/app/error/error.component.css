@@ -1,32 +1,25 @@
-.error-wrapper {
+.about-wrapper {
   position: relative;
-  width: auto;
   height: 100%;
 }
 
-.header-wrapper{
+.header-wrapper {
   width: 100%;
 }
 
 .body-wrapper {
-  margin: 1.5rem;
-  position: relative;
-  width: auto;
-  height: auto;
+  padding: 0rem 15rem;
 }
 
 mat-toolbar {
   height: 4rem;
   background: inherit;
+  padding: 3rem;
+  font-size: 1rem;
 }
 
 .spacer {
   flex: 1 1 auto;
-}
-
-
-span.breadcrumbs {
-  display: inline-flex;
 }
 
 .route {
@@ -37,26 +30,26 @@ span.breadcrumbs {
   cursor: pointer;
 }
 
-span.breadcrumbs {
+span.breadcrumbs,
+p.back-button {
+  display: inline-flex;
   background-color: transparent;
-  font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
-  padding: 0 1rem;
   margin: 0;
   width: auto;
 }
 
 .headline-container {
-  padding: 2rem 0.5rem;
+  padding: 2rem 0;
   height: auto;
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3.25rem;
-  height: auto;
+  font-size: 8rem;
+  margin: 10rem 0 0 0;
   position: relative;
+  opacity: 90%;
 }
 
 
@@ -84,25 +77,31 @@ mat-list-item {
 
 mat-nav-list mat-list-item h3 {
   display: inline-block;
+  display: inline;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  opacity: 50%;
+  font-weight: 400;
+  line-height: 4rem;
 
 }
 
-mat-list-item {
-  height: auto;
-  position: relative;
-  width: 20rem;
-  height: auto;
-}
-
-mat-list mat-list-item:hover {
+mat-nav-list mat-list-item h3:hover {
+  color: var(--main-color);
   cursor: pointer;
-  color: red;
+  opacity: 100%;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--main-color);
 }
 
 
 .footer-wrapper,
 .footer-content {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 
 }
@@ -110,18 +109,26 @@ mat-list mat-list-item:hover {
 .footer-wrapper,
 .footer-content {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
   padding: 1rem;
   margin: auto;
 }
 
-.footer-text {
+.footer-text,
+a {
   text-align: center;
   margin: 0;
   padding: 0;
   width: auto;
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-text,
+a:hover {
+  cursor: pointer;
 }
 
 .footer-content {
@@ -131,17 +138,19 @@ mat-list mat-list-item:hover {
   opacity: 75%;
 }
 
-@media (min-width: 720px){
+/*
+@media (min-width: 720px) {
   .body-text {
     width: 80%;
   }
-  .error-text{
+
+  .error-text {
     font-size: 0.9rem;
   }
 }
 
-@media (min-width: 990px){
+@media (min-width: 990px) {
   .body-text {
     width: 60%;
   }
-}
+} */

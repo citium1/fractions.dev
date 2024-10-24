@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [MatToolbarModule, MatListModule, MatButtonModule ],
+  imports: [MatToolbarModule, MatListModule, MatButtonModule, RouterModule ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-error',
   standalone: true,
-  imports: [MatToolbarModule, MatListModule],
+  imports: [MatToolbarModule, MatListModule, RouterModule],
   templateUrl: './error.component.html',
   styleUrl: './error.component.css'
 })
