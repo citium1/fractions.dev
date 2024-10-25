@@ -1,51 +1,53 @@
 import { DOCUMENT } from '@angular/common';
-import { Inject, Injectable, Renderer2, RendererFactory2 } from '@angular/core';
+import { Inject, Injectable, OnInit, Renderer2, RendererFactory2 } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RendererService {
-  lightTheme: boolean = false;
+export class RendererService implements OnInit{
+  darkTheme: boolean = false;
   private renderer: Renderer2;
 
   constructor(rendererFactory: RendererFactory2, @Inject(DOCUMENT) private document){
     this.renderer = rendererFactory.createRenderer(null, null);
   }
 
-  // get lightTheme boolean from Local Storage
-  getItem(lightTheme: string): string {
-    return localStorage.getItem(lightTheme)
-  }
+  ngOnInit(): void {
 
-  // set lightTheme boolean in local Storage
-  setItem(lightTheme: string, value: boolean): void {
-    localStorage.setItem(lightTheme, value.toString());
   }
 
 
+  // get darkTheme boolean from Local Storage
+  getItem(darkTheme: string): string {
+    return localStorage.getItem(darkTheme)
+  }
+
+  // set darkTheme boolean in local Storage
+  setItem(darkTheme: string, value: boolean): void {
+    localStorage.setItem(darkTheme, value.toString());
+  }
 
   toggleTheme() {
-  if (!this.lightTheme) {
+  if (!this.darkTheme) {
     this.renderer.addClass(document.body, 'light')
-      this.lightTheme = true;
+      this.darkTheme = true;
     } else {
       this.renderer.removeClass(document.body, 'light')
-        this.lightTheme = false;
+        this.darkTheme = false;
   }
-    this.setItem('lightTheme', this.lightTheme);
+    this.setItem('darkTheme', this.darkTheme);
 }
 
   getTheme() {
-    const response = this.getItem('lightTheme')
-    console.log(response + " current value");
+    const response = this.getItem('darkTheme')
     if (response === 'true') {
-      this.lightTheme = true;
+    this.renderer.addClass(document.body, 'light')
+      this.darkTheme = true;
     } else {
-      this.lightTheme = false;
+      this.darkTheme = false;
     }
-        console.log(this.lightTheme + " current value");
-
-    return this.lightTheme;
+    console.log(this.darkTheme)
+    return this.darkTheme;
   }
 
 }

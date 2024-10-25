@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { RendererService } from './renderer.service';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +12,11 @@ export class AppComponent implements OnInit {
   cookieConsent: boolean = false;
 
 
-  constructor(private cookieService: CookieService) {
+  constructor(private cookieService: CookieService, private renderer: RendererService) {
   }
 
   onConsent() {
-    this.cookieService.set('cookieConsent', 'true');
+    this.cookieService.set('cookieConsent', 'true',{expires: 365});
     this.cookieConsent = true;
   }
 
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit {
     if (cookieValue === 'true') {
       this.cookieConsent = true;
     }
+    this.renderer.getTheme()
   }
 
 

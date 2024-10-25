@@ -159,7 +159,7 @@ h2 {
 
 @media only screen and (max-width: 440px) {
   .body-wrapper {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   mat-toolbar {
@@ -168,7 +168,7 @@ h2 {
     height: 4rem;
     background: inherit;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 2rem;
   }
 
   span.breadcrumbs {

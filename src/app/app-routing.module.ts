@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'apps', component: AppsComponent },
-   // { path: 'not-found', component: PageNotFoundComponent },
   {
     path: 'not-found',
     component: ErrorComponent,
