@@ -1,6 +1,6 @@
 //TODO add cookie banner
-//TODO update angular version
 //TODO add google analytics
+//TODO Lazy loading
 //TODO update links
 //TODO Refactor css
 //TODO Build / Test / Service Worker
