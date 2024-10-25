@@ -1,8 +1,10 @@
 //TODO add cookie banner
-//TODO add blog
-//TODO update links
+//TODO update angular version
 //TODO add google analytics
-//TODO update text
-//TODO add splash screen
+//TODO update links
 //TODO Refactor css
+//TODO Build / Test / Service Worker
+//TODO add blog
+//TODO add splash screen
+
 
