@@ -1,8 +1,8 @@
 
 //TODO Lazy loading
 //TODO Refactor css
-//TODO Build / Test / Service Worker
 // TODO Fix tests
+//TODO Performance analysis and refactoring
 
 MVP something something
 //TODO add blog
