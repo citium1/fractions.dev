@@ -1,4 +1,3 @@
-//TODO add media queries for responsive / mobile
 //TODO add cookie banner
 //TODO add blog
 //TODO update links

@@ -114,7 +114,9 @@ section .contact-nav .contact-button button:hover {
 .contact-link a {
   margin-right: 1rem;
 }
-.contact-link, .contact-link-bottom {
+
+.contact-link,
+.contact-link-bottom {
   margin: 2rem 0;
 }
 
@@ -159,17 +161,113 @@ a {
   opacity: 75%;
 }
 
-/* @media (min-width: 720px){
+@media only screen and (max-width: 440px) {
+  .body-wrapper {
+    padding: 0 2rem;
+  }
+
+  mat-toolbar {
+    height: 3rem;
+    font-size: 1.5rem;
+    height: 4rem;
+    background: inherit;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  span.breadcrumbs {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 3rem 0 0 0;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    padding: 1rem 0;
+    margin: 2rem 0 2rem 0;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
   .body-text {
-    width: 80%;
+    width: 100%;
   }
-  .apps-text, .content-text{
-    font-size: 0.9rem;
+
+  .skills-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
+
+  .strategy-card,
+  .management-card,
+  .techincal-card {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
 }
 
-@media (min-width: 990px){
-  .body-text {
-    width: 60%;
+@media only screen and (min-width:441px)and (max-width: 1366px) {
+  .body-wrapper {
+    padding: 0 2rem;
   }
-} */
+
+  mat-toolbar {
+    height: 3rem;
+    font-size: 2rem;
+    height: 4rem;
+    background: inherit;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  span.breadcrumbs {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+    margin: 3rem 0 0 0;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 0;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .body-text {
+    width: 100%;
+  }
+
+  .skills-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .strategy-card,
+  .management-card,
+  .techincal-card {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+}
