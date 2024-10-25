@@ -8,22 +8,25 @@ import { ContactComponent } from '../contact/contact.component';
 import { MatListModule } from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import { RendererService } from '../renderer.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [MatToolbarModule, MatSlideToggleModule, FormsModule, MatListModule, MatButtonModule, ContactComponent, CommonModule],
+  providers: [CookieService],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
   lightTheme: boolean;
+  activeRoute: string ='';
+  menu: string[] = ['About', 'Contact', 'Apps'];
+  cookieValue: string;
 
-   activeRoute: string ='';
+  constructor(private router: Router, private route: ActivatedRoute, private renderer: RendererService) {
 
-    menu: string[] = ['About', 'Contact', 'Apps'];
 
-  constructor( private router: Router, private route: ActivatedRoute, private renderer: RendererService) {
   }
 
   ngOnInit() {

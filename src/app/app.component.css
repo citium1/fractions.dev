@@ -1,0 +1,43 @@
+.cookie-banner {
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--secondary-color);
+}
+
+.cookie-layout {
+  display: block;
+  margin: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h4:hover {
+  cursor: pointer;
+  color: #ffff;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .cookie-layout {
+    display: block;
+    margin: 3rem 15rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+}

@@ -1,4 +1,6 @@
-import { NgModule, Renderer2, isDevMode } from '@angular/core';
+import {
+  NgModule, isDevMode
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,8 +16,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   declarations: [AppComponent],
   providers: [ RendererService],
   bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
+  imports: [BrowserModule,
     AppRoutingModule,
     ContactComponent,
     BrowserAnimationsModule,
