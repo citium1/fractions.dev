@@ -1,6 +1,7 @@
 
 //TODO Lazy loading
 //TODO Refactor css
+// style hover for svgs
 // TODO Fix tests
 //TODO Performance analysis and refactoring
 

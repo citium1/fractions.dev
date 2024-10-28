@@ -40,20 +40,20 @@ span.breadcrumbs {
   width: auto;
 }
 
-
-mat-list mat-list-item i {
+mat-list mat-list-item i img {
+  width: 1.3rem;
+  height: 1.3rem;
   opacity: 50%;
   position: relative;
-  width: auto;
-  height: auto;
   visibility: hidden;
-  -webkit-animation: show-toggle 0.25s forwards 1.25s;
-  animation: show-toggle 0.25s forwards 1.25s;
+  -webkit-animation: show-toggle 0.25s forwards 1s;
+  animation: show-toggle 0.25s forwards 1s;
 }
 
-mat-list mat-list-item i:hover {
-  color: var(--main-color);
+mat-list mat-list-item i img:hover {
   opacity: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
 }
 
@@ -176,6 +176,16 @@ h2 {
     line-height: 2rem;
   }
 
+  mat-list mat-list-item i img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  mat-list mat-list-item i img:hover {
+    width: 3rem;
+    height: 3rem;
+  }
+
   h1 {
     font-size: 3rem;
     margin: 8rem 0 0 0;
@@ -213,6 +223,16 @@ h2 {
   span.breadcrumbs {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+
+  mat-list mat-list-item i img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  mat-list mat-list-item i img:hover {
+    width: 3rem;
+    height: 3rem;
   }
 
   h1 {

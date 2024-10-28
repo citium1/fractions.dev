@@ -7,9 +7,10 @@
       <span class="spacer"></span>
       <div class="theme">
         <mat-list>
-          <mat-list-item color="warn">
-            <i class="fa-regular fa-lightbulb" (click)="onToggle()"
-              [ngClass]="lightTheme ? 'lightsOn' : 'lightsOut' "></i>
+          <mat-list-item>
+            <i (click)="onToggle()" [ngClass]="lightTheme ? 'lightsOn' : 'lightsOut' "><img
+                src="../../assets/icons/lightbulb.svg" alt="lightbulb" role="img">
+            </i>
           </mat-list-item>
         </mat-list>
       </div>
