@@ -1,9 +1,10 @@
 
 //TODO Lazy loading
 //TODO Refactor css
-// style hover for svgs
+// TODOstyle hover for svgs
 // TODO Fix tests
-//TODO Performance analysis and refactoring
+// TODO icon PWA
+// TODO push for PWA install
 
 MVP something something
 //TODO add blog

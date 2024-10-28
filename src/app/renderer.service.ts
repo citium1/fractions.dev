@@ -46,7 +46,6 @@ export class RendererService implements OnInit{
     } else {
       this.darkTheme = false;
     }
-    console.log(this.darkTheme)
     return this.darkTheme;
   }
 

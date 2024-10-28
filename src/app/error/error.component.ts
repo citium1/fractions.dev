@@ -18,7 +18,6 @@ export class ErrorComponent {
   }
 
   ngOnInit() {
-    console.log(this.route.snapshot.url[0].path)
     this.activeRoute = this.route.snapshot.url[0].path
   }
 

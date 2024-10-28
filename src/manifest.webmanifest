@@ -1,7 +1,7 @@
 {
-  "name": "citium",
-  "short_name": "citium",
-  "theme_color": "#1976d2",
+  "name": "fractions.dev",
+  "short_name": "frctns",
+  "theme_color": "#fafafa",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
