@@ -177,7 +177,8 @@ a img:hover {
 
   a img:hover {
     /* color: var(--main-color); */
-    opacity: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
 }
@@ -229,6 +230,8 @@ a img:hover {
 
   a img:hover {
     /* color: var(--main-color); */
+    width: 3rem;
+    height: 3rem;
     opacity: 100%;
   }
 
