@@ -2,7 +2,7 @@
   "name": "fractions.dev",
   "short_name": "frctns",
   "theme_color": "#303030",
-  "background_color": "##303030",
+  "background_color": "#303030",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
